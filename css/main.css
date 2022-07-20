@@ -1,0 +1,15 @@
+html{
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+#wrap{
+    width: 1500px;
+}
+#logo{
+    width: 100px;
+}
