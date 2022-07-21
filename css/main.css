@@ -116,7 +116,7 @@ main {
     position: absolute;
     overflow: hidden;
     transform: translateY(-100%);
-    background-color: rgba(240, 237, 204, .5);
+    background-color: rgba(240, 237, 204, .3);
 }
 .item .mask p{
     font-family: 'Yeon Sung', cursive;
