@@ -1,15 +1,212 @@
-html{
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+html {
     font-size: 10px;
     margin: 0;
     padding: 0;
 }
-body{
+
+body,div {
     margin: 0;
     padding: 0;
 }
-#wrap{
-    width: 1500px;
+
+body {
+    width: 150rem;
+    margin: auto;
+    background-color: rgb(48, 48, 48);
 }
-#logo{
-    width: 100px;
+
+/* 헤더 */
+header {
+    padding-top: 3rem;
+    padding-left: 4rem;
+}
+
+#title {
+    width: 30rem;
+    float: left;
+    /* margin-top: 3rem; */
+}
+
+/* 타이틀 */
+#title svg {
+    width: 13rem;
+    float: left;
+}
+
+#title svg g {
+    fill: rgb(69, 130, 243);
+}
+
+#titletext {
+    width: 15rem;
+    float: right;
+    font-size: 4rem;
+    padding-top: 3rem;
+    letter-spacing: .5rem;
+    color: white;
+}
+
+/* 메뉴바 */
+#menu {
+    float: right;
+    padding-top: 5rem;
+    margin-right: 7rem;
+}
+
+#menu>ul li {
+    text-align: center;
+    display: block;
+    float: left;
+    margin: 0 5rem 1rem 0;
+}
+
+#menu>ul li:nth-child(1) {
+    float: left;
+}
+
+#menu>ul li:nth-child(3) {
+    float: right;
+}
+
+#menu>ul li>a {
+    font-size: 2.5rem;
+    text-decoration: none;
+}
+
+#menu>ul li>a:link,
+:visited {
+    color: white;
+}
+
+/* 바디 */
+main {
+    margin-top: 2rem;
+    float: left;
+}
+
+.row {
+    width: 150rem;
+    height: 56.6rem;
+}
+
+.explain {
+    width: 75rem;
+    height: 15rem;
+    color: white;
+    font-size: 5rem;
+    padding-left: 4rem;
+}
+.explain p{
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+.item {
+    width: 40rem;
+    height: 56.6rem;
+    margin: 4rem;
+    float: left;
+    transition: all 0.3s linear;
+}
+
+.item .mask {
+    width: 40rem;
+    height: 56.6rem;
+    position: absolute;
+    overflow: hidden;
+    transform: translateY(-100%);
+    background-color: rgba(240, 237, 204, .5);
+}
+.item .mask p{
+    font-family: 'Yeon Sung', cursive;
+    position: relative;
+    text-align: center;
+    top: 35%;
+    font-size: 3.5rem;
+    color: #02343F;
+}
+.mask p:nth-child(2){
+    color: rgba(2, 52, 63, 0);
+    transition: all 0.3s linear;
+}
+.item:hover .mask p:nth-child(2){
+    color: rgba(2, 52, 63, 1);
+}
+
+.item:hover{
+    transform: scale(1.1);
+}
+
+/* 푸터 */
+#footerbox{
+    width: 150rem;
+    height: 50rem;
+    background: rgb(192, 191, 191);
+    float: left;
+    margin-bottom: 4rem;
+    padding: auto;
+}
+
+/* inputbox */
+#inputbox{
+    width: 65rem;
+    float: left;
+    margin: 2rem;
+}
+#inputboxtext{
+    font-size: 3rem;
+    font-weight: bold;
+}
+input[type=text]{
+    border: none;
+    border-bottom:solid 1px gray;  
+    background: transparent;
+    margin-top: 2rem;
+}
+input[type=text]::placeholder{
+    font-size: 1.5rem;
+    line-height: 3rem;
+
+}
+#inputbox button{
+    width: 10rem;
+    height: 5rem;
+    margin-top: 3rem;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: black;
+    border-radius: .5rem;
+    letter-spacing: .5rem;
+}
+#inputbox p:last-child{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.5rem;
+}
+#inputbox p:last-child img{
+    width: 1.5rem;
+    vertical-align: middle;
+    padding-bottom: .2rem;
+}
+#inputbox p:last-child img svg g{
+    fill: rgba(0, 0, 0, 0.5);
+}
+/* infobox */
+#infobox{
+    width: 35rem;
+    margin-right: 5rem;
+    margin-top: 1rem;
+}
+.icon{
+    width: 5rem;
+    border: solid 2px black;
+    float: left;
+    margin: .5rem;
+}
+.icon img{
+    width: 5rem;
+}
+#infobox{
+    float:  right;
 }
