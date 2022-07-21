@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&display=swap');
 html {
     font-size: 10px;
     margin: 0;
@@ -42,10 +43,11 @@ header {
 #titletext {
     width: 15rem;
     float: right;
-    font-size: 4rem;
+    font-size: 4.5rem;
     padding-top: 3rem;
-    letter-spacing: .5rem;
+    /* letter-spacing: .5rem; */
     color: white;
+    font-family: 'Cormorant SC', serif;
 }
 
 /* 메뉴바 */
