@@ -197,7 +197,7 @@ input[type=text]::placeholder{
 #infobox{
     width: 35rem;
     margin-right: 5rem;
-    margin-top: 1rem;
+    margin-top: 2.4rem;
 }
 .icon{
     width: 5rem;
@@ -210,4 +210,8 @@ input[type=text]::placeholder{
 }
 #infobox{
     float:  right;
+}
+
+.Follow{
+    padding-left: 0.5rem;
 }
